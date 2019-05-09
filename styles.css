@@ -267,13 +267,17 @@ section{
 
   }
   .snap{
-
+    scroll-snap-type: none;
   }
   .area{
-  padding-top: 15vh;
+    padding-top: 15vh;
+    scroll-snap-align: none;
   }
   .messages {
 
+  }
+  section{
+    margin:0 6%;
   }
   .profile {
     flex-direction: column-reverse;
@@ -296,10 +300,13 @@ section{
     /* flex-direction: column; */
   }
   .circle{
-    height:10em;
-    width:10em;
+    height:8em;
+    width:8em;
   }
   .circle >h3{
+    font-size: 0.7em;
+  }
+  .circle >p{
     font-size: 0.7em;
   }
   .myself p {
@@ -321,6 +328,9 @@ section{
   }
   .workList>li>p{
     font-size: 10px;
+  }
+  .workList >li>h4{
+    font-size: 0.7em;
   }
   .contact{
 
