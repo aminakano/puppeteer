@@ -242,6 +242,9 @@ section{
   header{
     height: 15vh;
   }
+  .navLink{
+    font-size:10px;
+  }
   h1{
   font-size: 1em;
   font-weight: bold;
@@ -255,7 +258,7 @@ section{
   padding: 2vh 0 2vh 5%;
   }
   h3{
-    font-size: 1.5em;
+    font-size: 1em;
   }
   h4{
     margin:0;
@@ -278,7 +281,7 @@ section{
 
   }
   .profile>p{
-    font-size: 1.2em;
+    font-size: 1em;
     margin-top: 5vh;
   }
   .portlait{
@@ -296,6 +299,12 @@ section{
     height:10em;
     width:10em;
   }
+  .circle >h3{
+    font-size: 0.7em;
+  }
+  .myself p {
+    font-size: 1em;
+  }
   .work{
 
   }
@@ -309,6 +318,9 @@ section{
   .workList > li:last-child>a>img{
     height:10em;
     width:6em;
+  }
+  .workList>li>p{
+    font-size: 10px;
   }
   .contact{
 
