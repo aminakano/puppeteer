@@ -71,6 +71,8 @@ h2 {
 .snap {
   overflow: auto;
   scroll-snap-type: y mandatory;
+  -webkit-scroll-snap-type: y mandatory;
+      -ms-scroll-snap-type: y mandatory;
   height: 100vh;
 }
 /* scroll snap child */
@@ -263,11 +265,11 @@ section{
 
   }
   .snap{
-    scroll-snap-type: none;
+    /* scroll-snap-type: none; */
   }
   .area{
     padding-top: 15vh;
-    scroll-snap-align: none;
+    /* scroll-snap-align: none; */
   }
   .messages {
 
