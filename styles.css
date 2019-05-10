@@ -1,7 +1,7 @@
 body {
   margin: 0 auto;
   background: #fbfbfb ;
-  font-family: 'calibri','Verdana', sans-serif ;
+  font-family: 'M PLUS 1p', sans-serif;
 
 }
 header {
@@ -35,6 +35,7 @@ header h1 {
 }
 nav {
   height: 5vh;
+
 }
 nav > ul > li {
   list-style: none;
@@ -51,7 +52,7 @@ a:hover{
 a {
   text-decoration: none;
   color: black;
-  font-family: 'Meddon', cursive;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 /* body */
 .container {
@@ -132,9 +133,7 @@ section{
 .c4{
   background-color: rgba(255,0,0,0.3);
 }
-/* .c3>p{
-  width:60%;
-} */
+
 .c4>p{
   width: 77%;
 }
@@ -142,14 +141,14 @@ section{
   padding:0 10%;
 }
 .myself p {
-  font-family: 'Annie Use Your Telescope', cursive;
+  /* font-family: 'Annie Use Your Telescope', cursive; */
   font-size: 2em;
   text-align: center;
 }
 
 /* work */
 .content{
-    /* padding-top:5%; */
+
 
 }
 .work {
@@ -189,7 +188,7 @@ section{
 .contact {
   /* background:rgba(151,151,255,0.7); */
   background-color: #ccc;
-  /* position: relative; */
+
 }
 .socialMedia>li{
   list-style: none;
@@ -223,8 +222,7 @@ section{
   align-items: flex-end;
   justify-content: center;
   height: 53%;
-  /* position: absolute;
-  bottom:0; */
+
   width: 100%;
 }
 .lastMsg {
@@ -254,7 +252,7 @@ section{
   }
   h2{
   font-size: 1em;
-  /* padding-bottom: 5vh; */
+
   padding: 2vh 0 2vh 5%;
   }
   h3{
@@ -297,7 +295,8 @@ section{
   }
   .circleWrap{
     flex-wrap: wrap;
-    /* flex-direction: column; */
+    justify-content: space-around;
+
   }
   .circle{
     height:8em;
@@ -338,6 +337,7 @@ section{
   .lastMsg{
     width: 80%;
     padding: 15% 10%;
+    font-size: 1em;
   }
   .box{
     height: 43%;
