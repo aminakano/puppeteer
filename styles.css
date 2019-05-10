@@ -16,7 +16,7 @@ header {
 }
 header h1 {
   font-family: 'Meddon', cursive;
-  font-weight: bolder;
+
   padding-left: 10%;
 }
 .logos{
@@ -61,10 +61,11 @@ a {
   /* padding-top:15%; */
 }
 h2 {
-  /* font-family: 'Meddon', cursive; */
+  font-family: 'M PLUS 1p', sans-serif;
   font-size: 2.2em;
   margin:0;
   padding-left: 5%;
+  font-weight: bolder;
 }
 /* scroll snap parent */
 .snap {
@@ -76,7 +77,6 @@ h2 {
 .area {
   scroll-snap-align: start;
   height:  100vh;
-  /* padding-top:20%; */
   padding-top:15%;
 }
 /* home */
@@ -92,8 +92,6 @@ section{
   display: flex;
 }
 .profile p {
-  /* width:70%; */
-
   font-size: 1.7em;
   /* padding:0 15%; */
 }
@@ -143,7 +141,6 @@ section{
   padding:0 10%;
 }
 .myself p {
-  /* font-family: 'Annie Use Your Telescope', cursive; */
   font-size: 2em;
   text-align: center;
 }
@@ -253,7 +250,7 @@ section{
     width: 50% !important;
   }
   h2{
-  font-size: 1em;
+  font-size: 1.2em;
   padding: 2vh 0 2vh 5%;
   }
   h3{
