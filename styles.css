@@ -14,9 +14,8 @@ header {
   left:0;
   width:100vw;
 }
-header h1 {
+h1 >a {
   font-family: 'Meddon', cursive;
-
   padding-left: 10%;
 }
 .logos{
@@ -315,16 +314,26 @@ section{
 
   }
   .workList{
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+  }
+  .workList > li{
+    width: 50%;
   }
   .workList > li>a>img{
     width: 10em;
     height: 6em;
   }
-  .workList > li:last-child>a>img{
+  .workList > li:nth-child(3)>a>img{
     height:10em;
     width:6em;
   }
+  /* .workList > li:last-child{
+    height:10em;
+    width:6em;
+    background-color: #f8f8f8;
+  } */
   .workList>li>p{
     font-size: 10px;
   }
@@ -340,7 +349,30 @@ section{
     font-size: 1em;
   }
   .box{
-    height: 43%;
+    height: 38%;
   }
-
+  .socialMedia>li{
+    background: white;
+    width: 5em;
+    height:5em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:5px;
+  }
+  #linkedin{
+    background: #0077B5;
+  }
+  #linkedin > a>i {
+    color: white;
+    font-size: 3em;
+  }
+  #email {
+    background: #5899f1;
+  }
+  #email>a>i{
+    font-size: 3em;
+    color: white;
+  }
 }
