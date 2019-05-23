@@ -72,7 +72,7 @@ a {
   height: 90vh;
   padding-top: 20vh;
 }
-.home {
+.messages {
   height: 90vh;
   padding-top: 15vh;
 }
@@ -340,9 +340,7 @@ footer {
   header{
     height: 5vh;
   }
-  /* .navLink{
-    font-size:10px;
-  } */
+
   nav {
     display: none;
   }
@@ -355,7 +353,7 @@ footer {
   }
   h2{
   font-size: 1.2em;
-  padding: 2vh 0 2vh 5%;
+  padding: 2vh 0;
   }
   h3{
     font-size: 1em;
@@ -369,7 +367,7 @@ footer {
   }
 
   .messages {
-    padding-top:8vh;
+    padding-top:5vh;
   }
   section{
     margin:0 6%;
@@ -399,7 +397,7 @@ footer {
 
   }
   .skills {
-    padding-top: 0;
+    padding-top: 40vh;
     height: 50vh;
   }
   .circleWrap{
@@ -427,21 +425,30 @@ footer {
     padding-top: 0;
   }
   .workList{
+    /* overflow-x: scroll; */
     flex-direction: column;
     /* flex-wrap: wrap; */
+    /* border: 1px solid lightgray;
+   padding: 1rem;
+
+   overflow-x: scroll;
+   scroll-padding: 0 50%;
+   scroll-snap-type: x mandatory; */
 
   }
   .workList > li{
-    width: 50%;
+    width: 100%;
+    /* width: 100vw; */
     text-align: center;
+
   }
   .workWrap>a>img{
-    width: 10em;
-    height: 6em;
+    width: 8em !important;
+    height: 5em !important;
   }
-  .workList > li:nth-child(3)>a>img{
-    height:10em;
-    width:6em;
+  .workList > li:nth-child(3)>div>a>img{
+    height:8em !important;
+    width:5em !important;
   }
   /* .workList > li:last-child{
     height:10em;
@@ -467,7 +474,9 @@ footer {
     height: 38%;
   }
   .socialMedia {
-    width: 78%;
+    width: 80%;
+    margin:0 10%;
+
   }
   #linkedin > a>i {
     font-size: 3em;
