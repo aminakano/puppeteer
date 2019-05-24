@@ -32,6 +32,9 @@ header {
 .text-normal {
   font-weight: lighter;
 }
+.tabs {
+  display: none;
+}
 h1 {
   margin: 0;
 }
@@ -209,22 +212,26 @@ section{
   border: 1px solid #9696df;
   margin-bottom: 10%;
   outline: none;
-  /* align-self: flex-end; */
+  display: flex;
 }
-.workList li button::after{
-  content: "Open Project";
-  color:#9696df;
-  /* font-size: 1.2em; */
+.workList li button a {
+  color: #9696df;
+  display: inline-block;
+  width: 100%;
+  height:100%;
+
+}
+.workList li button a:hover{
+  color:#fff;
+  cursor: pointer;
 }
 .workList li button:hover {
   background: #9696df;
-  color: #fff;
   cursor: pointer;
 }
-.workList li button:hover::after{
-  /* content: "Open"; */
-  color:#fff;
-}
+
+
+
 /* .workList li button a {
   color:#9696df;
 }
@@ -263,15 +270,11 @@ section{
 }
 
 /* contact */
-.contact {
-
-}
 
 .socialMedia{
   display: flex;
   justify-content: center;
   width: 60%;
-  /* align-items: center; */
   padding: 0;
   margin: 0 20%;
   height: 30vh;
@@ -304,16 +307,11 @@ section{
 }
 
 
-#linkedin{
-  /* background: #0077B5; */
-}
 #linkedin > a>i {
   color: white;
   font-size: 2.6em;
 }
-#email {
-  /* background: #5899f1; */
-}
+
 #email>a>i{
   font-size: 2em;
   /* color: white; */
@@ -324,9 +322,7 @@ footer {
   filter:hue-rotate(-15deg);
   height: 40vh;
   z-index: 1;
-  /* position: fixed;
-  bottom: 0;
-  right: 0; */
+
 }
 
 
@@ -345,25 +341,30 @@ footer {
     display: none;
   }
   h1{
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   }
   .h1div{
-    width: 50% !important;
+    width: 60% !important;
   }
   h2{
   font-size: 1.2em;
   padding: 2vh 0;
+  }
+  .h2 {
+    font-size: 1.5em;
+    margin-top: 10%;
   }
   h3{
     font-size: 1em;
   }
   h4{
     margin: 0;
+    font-size: 1.2em;
   }
-
-  .container{
-
+  .messages , .skills ,.work ,.contact {
+    height: auto;
+    padding-top: 0;
   }
 
   .messages {
@@ -375,7 +376,8 @@ footer {
   .profile {
     flex-direction: column-reverse;
     align-items: center;
-
+    border: 1px solid #9696df;
+    border-radius: 30px;
   }
   .profile p{
     font-size: 1em;
@@ -390,43 +392,47 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
   }
   .interests {
     width: 100%;
 
   }
+  .interesth4 {
+    font-size: 1.2em;
+    padding:10% 0 5% 0;
+  }
   .skills {
-    padding-top: 40vh;
+    /* padding-top: 50vh; */
     height: 50vh;
+  }
+  .fa-js {
+    font-size: 3em;
   }
   .circleWrap{
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 0;
+    height: 50vh;
   }
   .circle{
-    height:8em;
-    width:8em;
+    height:10em;
+    width:10em;
   }
   .circle >h3{
-    font-size: 0.7em;
+    font-size: 1em;
   }
   .circle >p{
     font-size: 0.7em;
   }
-  .c3 , .c4{
-    margin-top: 5%;
-  }
-  .myself p {
-    font-size: 1em;
-  }
+
+
   .work {
-    padding-top: 0;
+    padding-top: 10vh;
   }
   .workList{
     /* overflow-x: scroll; */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* flex-wrap: wrap; */
     /* border: 1px solid lightgray;
    padding: 1rem;
@@ -434,11 +440,12 @@ footer {
    overflow-x: scroll;
    scroll-padding: 0 50%;
    scroll-snap-type: x mandatory; */
-
+  display: none;
   }
-  .workList > li{
+
+  /* .workList > li{
     width: 100%;
-    /* width: 100vw; */
+    width: 100vw;
     text-align: center;
 
   }
@@ -449,19 +456,109 @@ footer {
   .workList > li:nth-child(3)>div>a>img{
     height:8em !important;
     width:5em !important;
-  }
+  } */
   /* .workList > li:last-child{
     height:10em;
     width:6em;
     background-color: #f8f8f8;
   } */
-  .workList>li>p{
+  /* .workList>li>p{
     font-size: 10px;
   }
   .workList >li>h4{
     font-size: 0.7em;
 
-  }
+  } */
+
+    /*タブ切り替え全体のスタイル*/
+    .tabs {
+      display: block;
+      margin-top: 50px;
+      padding-bottom: 40px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      margin: 0 auto;
+      height: 80vh;
+    }
+
+    /*タブのスタイル*/
+    .tab_item {
+      width: calc(100%/3);
+      height: 50px;
+      border-bottom: 3px solid #5ab4bd;
+      background-color: #d9d9d9;
+      line-height: 50px;
+      font-size: 16px;
+      text-align: center;
+      color: #565656;
+      display: block;
+      float: left;
+      text-align: center;
+      font-weight: bold;
+      transition: all 0.2s ease;
+    }
+    .tab_item:hover {
+      opacity: 0.75;
+    }
+
+    /*ラジオボタンを全て消す*/
+    input[name="tab_item"] {
+      display: none;
+    }
+
+    /*タブ切り替えの中身のスタイル*/
+    .tab_content {
+      display: none;
+      padding: 40px 40px 0;
+      clear: both;
+      overflow: hidden;
+    }
+
+
+    /*選択されているタブのコンテンツのみを表示*/
+    #all:checked ~ #all_content,
+    #programming:checked ~ #programming_content,
+    #design:checked ~ #design_content {
+      display: block;
+    }
+
+    /*選択されているタブのスタイルを変える*/
+    .tabs input:checked + .tab_item {
+      background-color: #5ab4bd;
+      color: #fff;
+    }
+    .c-txtsp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .c-txtsp a img {
+      width: 15em ;
+      height: 10em ;
+    }
+    .vertical a img{
+      height: 13em ;
+      width: 9em ;
+    }
+    .c-txtsp button {
+      width: 100%;
+      font-size: 1.8em;
+      height: 20%;
+      border-radius: 30px;
+      background: #5ab4bd;
+      margin-bottom: 10%;
+      outline: none;
+      border: none;
+    }
+    .c-txtsp button a {
+      display: block;
+    }
+    .c-txtsp button::after{
+      /* content: "Open Project"; */
+      color:white;
+      /* font-size: 1.2em; */
+    }
   .contact{
 
   }
