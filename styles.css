@@ -353,7 +353,10 @@ footer {
   }
   .h2 {
     font-size: 1.8em;
-    margin-top: 5%;
+    margin-top: 15%;
+  }
+  .pl-5 {
+    margin-top:5%;
   }
   h3{
     font-size: 1em;
@@ -398,6 +401,9 @@ footer {
   .interests {
     width: 100%;
     margin-bottom: 5%;
+    /* border: 1px solid #9696df; */
+    border-radius: 30px;
+    /* box-shadow: 0 12px 10px -6px rgba(0,0,0,.3); */
   }
   .interesth4 {
     font-size: 1.2em;
@@ -546,7 +552,7 @@ footer {
     .c-txtsp button {
       width: 100%;
       font-size: 1.8em;
-      height: 20%;
+      height: 60px;
       border-radius: 30px;
       background: #5ab4bd;
       margin-bottom: 10%;
@@ -583,6 +589,9 @@ footer {
 
   #email>a>i{
     font-size: 2.3em;
+  }
+  .lastMsg {
+    padding: 10%;
   }
   footer {
     height: 30vh;
