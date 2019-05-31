@@ -282,7 +282,8 @@ section{
 
 .socialMedia>li{
   list-style: none;
-  background: #9696df;
+  /* background: #9696df; */
+  background: linear-gradient(-225deg, #9696df 0%, #61d2d6 100%) ;
   width: 4em;
   height:4em;
   border-radius: 50%;
@@ -327,9 +328,8 @@ footer {
 
 
 
-
 /* media queries - smartphone */
-@media screen and (max-width:575.98px){
+@media screen and (max-width:575.98px) and (orientation: portrait) {
   body{
 
   }
@@ -352,8 +352,8 @@ footer {
   padding: 2vh 0;
   }
   .h2 {
-    font-size: 1.5em;
-    margin-top: 10%;
+    font-size: 1.8em;
+    margin-top: 5%;
   }
   h3{
     font-size: 1em;
@@ -387,6 +387,7 @@ footer {
   .portlait{
     height: 5.5em;
     width: 5.5em;
+    padding-top: 3%;
   }
   .interestsBox{
     flex-direction: column;
@@ -396,7 +397,7 @@ footer {
   }
   .interests {
     width: 100%;
-
+    margin-bottom: 5%;
   }
   .interesth4 {
     font-size: 1.2em;
@@ -431,6 +432,7 @@ footer {
     padding-top: 10vh;
   }
   .workList{
+    display: none;
     /* overflow-x: scroll; */
     /* flex-direction: column; */
     /* flex-wrap: wrap; */
@@ -440,7 +442,7 @@ footer {
    overflow-x: scroll;
    scroll-padding: 0 50%;
    scroll-snap-type: x mandatory; */
-  display: none;
+
   }
 
   /* .workList > li{
@@ -573,13 +575,26 @@ footer {
   .socialMedia {
     width: 80%;
     margin:0 10%;
-
+    height: 25vh;
   }
   #linkedin > a>i {
     font-size: 3em;
   }
 
   #email>a>i{
-    font-size: 3em;
+    font-size: 2.3em;
+  }
+  footer {
+    height: 30vh;
+  }
+}
+/* XS size screen */
+@media (max-width:365px){
+  .circle{
+    height:8em;
+    width:8em;
+  }
+  .fa-html5 , .fa-css3-alt , .fa-js{
+    font-size: 2em;
   }
 }
