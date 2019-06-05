@@ -7,6 +7,8 @@
   }
   .title {
     text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 5%;
   }
   .top-text , .skills, .contact {
     width:90%;
@@ -16,18 +18,29 @@
     margin-bottom: 5%;
   }
   .work {
-    padding-top: 20%;
+    padding-top: 10%;
+    height: auto;
   }
   .skills {
     margin-top: 15%;
   }
+  .skill-title {
+    font-size: 1.3em;
+  }
   .topHeading {
-    font-size: 0.5em;
-    padding: 0 5%;
+    height: 80vh;
+    width: 80vw;
+    padding: 20% 5% 0 5%;
+  }
+  .topHeading h1,h2 {
+    font-size: 3.5em;
+    margin-bottom: 0;
+    /* padding:0 10%; */
   }
   .portrait {
     height: 7em;
     width: 7em;
+    border: 3px solid #62cbc9;
   }
   .top-text {
     height: auto;
@@ -41,6 +54,8 @@
   .msg p {
     font-size: 1em;
     padding-right: 0;
+    padding-top: 5%;
+    line-height: 1.7;
   }
   .interestsBox {
     flex-direction: column;
@@ -55,6 +70,13 @@
   }
   .interestsBox li h5 {
     margin: 2% 0;
+    font-size: 1.4em;
+  }
+  .interests h4 {
+    font-size: 1.5em;
+  }
+  .desc p {
+    font-size: 0.7em;
   }
   .circleWrap {
     flex-wrap: wrap;
@@ -73,7 +95,55 @@
   .contact p {
     font-size: 1em;
   }
+  .row {
+    display: none;
+  }
+  .workList {
+    display: block;
+  }
+  .workWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 15%;
+  }
+  .workWrap > a>img {
+    height: 10em;
+    width: 100%;
+  }
 
+  .workWrap > h4, .workWrap >p {
+    margin:0;
+    font-size: 0.7em;
+    color: #595757;
+  }
+  .workWrap >h4 {
+    font-size: 0.9em;
+  }
+
+  .btn_sp {
+    width:80%;
+    height: 45px;
+    border: 1px solid #62cbc9;
+    border-radius: 10px;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+  }
+  .btn_sp:active {
+      background: #62cbc9;
+  }
+  .btn_sp a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    /* height: 0%; */
+    color: #62cbc9;
+  }
+  .btn_sp a:active {
+
+    color: #f8f8f8;
+  }
  }
  /* Small devices (landscape phones, 576px and up) */
  @media (min-width: 576px) and (max-width: 767.98px) {
