@@ -30,12 +30,13 @@
   .topHeading {
     height: 80vh;
     width: 80vw;
-    padding: 20% 5% 0 5%;
+    padding: 12% 5% 0 5%;
   }
-  .topHeading h1,h2 {
+  .topHeading h1,.topHeading h2 {
     font-size: 3.5em;
     margin-bottom: 0;
-    /* padding:0 10%; */
+    margin-top:0.4em;
+  
   }
   .portrait {
     height: 7em;
@@ -56,6 +57,7 @@
     padding-right: 0;
     padding-top: 5%;
     line-height: 1.7;
+    color: #595757;
   }
   .interestsBox {
     flex-direction: column;
@@ -108,7 +110,7 @@
     padding-bottom: 15%;
   }
   .workWrap > a>img {
-    height: 10em;
+    height: 11em;
     width: 100%;
   }
 
