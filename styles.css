@@ -597,6 +597,8 @@ footer {
     height: 30vh;
   }
 }
+
+
 /* XS size screen */
 @media (max-width:365px){
   .circle{
@@ -606,4 +608,30 @@ footer {
   .fa-html5 , .fa-css3-alt , .fa-js{
     font-size: 2em;
   }
+}
+@media (min-width : 575.99px) and (orientation : portrait) {
+  .profile {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .portlait {
+    height: 10em;
+    width: 10em;
+    padding-right: 5%;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .circleWrap {
+    flex-wrap: wrap;
+  }
+  .circle{
+    width: 48%;
+    height: 27vh;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 575.99px) and (max-device-width : 1023px) and (orientation : landscape) {
+/* Styles */
 }

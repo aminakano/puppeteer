@@ -1,0 +1,93 @@
+
+
+/* Extra small devices  */
+@media (max-width: 575.98px) and (orientation: portrait){
+  .navLink {
+    display: none;
+  }
+  .title {
+    text-align: center;
+  }
+  .top-text , .skills, .contact {
+    width:90%;
+    padding: 0 5%;
+  }
+  .contact {
+    margin-bottom: 5%;
+  }
+  .work {
+    padding-top: 20%;
+  }
+  .skills {
+    margin-top: 15%;
+  }
+  .topHeading {
+    font-size: 0.5em;
+    padding: 0 5%;
+  }
+  .portrait {
+    height: 7em;
+    width: 7em;
+  }
+  .top-text {
+    height: auto;
+  }
+  .top-text h3 {
+    font-size: 1.5em;
+  }
+  .msg {
+    flex-direction: column-reverse;
+  }
+  .msg p {
+    font-size: 1em;
+    padding-right: 0;
+  }
+  .interestsBox {
+    flex-direction: column;
+
+  }
+  .interestsBox li {
+    width: 96%;
+    height: 20vh;
+  }
+  .interestsBox li:nth-child(1){
+    order: -1;
+  }
+  .interestsBox li h5 {
+    margin: 2% 0;
+  }
+  .circleWrap {
+    flex-wrap: wrap;
+  }
+  .c1,.c2,.c3,.c4{
+    width: 44%;
+
+  }
+  .c1, .c2 {
+    border-bottom: none;
+  }
+
+  .row__inner {
+    padding-left: 2%;
+  }
+  .contact p {
+    font-size: 1em;
+  }
+
+ }
+ /* Small devices (landscape phones, 576px and up) */
+ @media (min-width: 576px) and (max-width: 767.98px) {
+
+
+  }
+
+
+
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+
+   }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {  }
