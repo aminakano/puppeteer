@@ -193,12 +193,15 @@ a {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-.c1,.c2,.c3,.c4 >div{
+.c1,.c2,.c3,.c4 {
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 
+}
+.c4 >div {
+  margin-top: 10%;
 }
 .c4 img {
   border:1px solid lightgray;

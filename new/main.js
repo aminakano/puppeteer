@@ -1,9 +1,3 @@
-// $('#scroll-down').on('click', function(){
-//     $("html,body").animate({
-//         scrollTop:$('#top-text').offset().top},'easeInOutQuart');
-// })
-
-
 function smoothScroll(target, duration){
   var target = document.querySelector(target);
   var targetPosition = target.getBoundingClientRect().top;
