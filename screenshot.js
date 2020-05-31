@@ -9,7 +9,7 @@ const main = async () => {
     deviceScaleFactor: 1,
   });
   await page.goto("https://unsplash.com");
-  await page.screenshot({ path: "img/unsplash.png" });
+  await page.screenshot({ path: "img/unsplash2.png" });
 
   await browser.close();
 };
