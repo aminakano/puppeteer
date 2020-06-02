@@ -29,9 +29,9 @@ let bookingURL =
         hotelJson.rating = hotelelement.querySelector(
           "span.review-score-badge"
         ).innerText;
-        if (hotelelement.querySelector("strong.price")) {
+        if (hotelelement.querySelector(".bui-price-display__value")) {
           hotelJson.price = hotelelement.querySelector(
-            "strong.price"
+            ".bui-price-display__value"
           ).innerText;
         }
       } catch (exception) {}

@@ -1,18 +1,17 @@
 const puppeteer = require("puppeteer");
 
-const main = async () => {
-  const browser = await puppeteer.launch({
-    headless: false,
-    slowMo: 250,
-    ignoreHTTPSErrors: true,
-  });
-  const page = browser.newPage();
-  await page.goto("https://news.ycombinator.com", {
-    waitUntil: "networkidle2",
-  });
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto("https://news.ycombinator.com");
   await page.pdf({ path: "img/hn.pdf", format: "A4" });
+  await browser.close();
+})()
 
-  page.close();
-}
-
-main();
+// (async () => {
+//   const browser = await puppeteer.launch();
+//   const page = await browser.newPage();
+//   await page.goto("https://google.com");
+//   await page.pdf({ path: "img/google.pdf", format: "Letter" });
+//   await browser.close();
+// })();
